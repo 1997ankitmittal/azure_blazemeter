@@ -15,8 +15,8 @@ steps:
 - task: BlazeMeter Integration@1
   inputs:
     testurl: 'https://a.blazemeter.com/app/#/accounts/581022/workspaces/584474/projects/693074/tests/8291689'
-    apikey: '$(APIKEY)'
-    apisecret: '$(APISECRET)'
+    apikey: '$env:APIKEY'
+    apisecret: '$env:APISECRET'
     showtaillog: true
     
 - script: |
