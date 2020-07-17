@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'windows-latest'
 
 steps:
 - script: echo Hello, world!
@@ -17,6 +17,7 @@ steps:
     testurl: 'https://a.blazemeter.com/app/#/accounts/581022/workspaces/584474/projects/693074/tests/8291689'
     apikey: '$(APIKEY)'
     apisecret: '$(APISECRET)'
+    showtaillog: true
     
 - script: |
     echo Add other tasks to build, test, and deploy your project.
