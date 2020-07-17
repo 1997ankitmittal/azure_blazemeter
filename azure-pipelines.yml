@@ -12,7 +12,12 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
+- task: BlazeMeter Integration@1
+  inputs:
+    testurl: 'https://a.blazemeter.com/app/#/accounts/581022/workspaces/584474/projects/693074/tests/8291689'
+    apikey: '$(APIKEY)'
+    apisecret: '$(APISECRET)'
+    
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
