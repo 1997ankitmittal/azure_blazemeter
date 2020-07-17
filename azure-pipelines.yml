@@ -15,10 +15,9 @@ steps:
 - task: BlazeMeter Integration@1
   inputs:
     testurl: 'https://a.blazemeter.com/app/#/accounts/581022/workspaces/584474/projects/693074/tests/8291689'
-    apikey: '$APIKEY'
-    apisecret: '$APISECRET'
+    apikey: '00ad0482b9fd737ba1c26cf5'
+    apisecret: '75a12ef99fd20f09b9fbfb8ca7ff1ba6e7048d0b18b2c2af26593e22afa543b43907de0e'
     showtaillog: true
-    
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
